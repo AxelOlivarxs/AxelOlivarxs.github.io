@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="https://img.icons8.com/nolan/64/internet.png" type="image/png">
     <style>
-        /* --- Variables y Reset --- */
         :root {
             --bg-dark: #0a0a12;
             --neon-blue: #00f0ff;
@@ -465,6 +464,23 @@
             }, 1500);
         });
     </script>
+    
+    <script>
+        // Control de accesibilidad
+        document.getElementById('font-increase').addEventListener('click', () => {
+            document.body.style.fontSize = '1.1rem';
+        });
+        
+        document.getElementById('high-contrast').addEventListener('click', () => {
+            document.body.classList.toggle('high-contrast');
+        });
+        
+        // Validación de formulario
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Formulario enviado (simulación)');
+        });
+    </script>
 
 
     <section class="hero">
@@ -524,7 +540,7 @@
                     </div>
                 </div>
 
-                <!-- Nodo nuevo 2004 - Web 2.0 -->
+                <!-- Nodo  2004 - Web 2.0 -->
                 <div class="timeline-node">
                     <div class="node-icon"><i class="fas fa-users"></i></div>
                     <div class="node-content">
@@ -533,7 +549,7 @@
                     </div>
                 </div>
 
-                <!-- Nodo nuevo 2007 - Era Móvil -->
+                <!-- Nodo 2007 - Era Móvil -->
                 <div class="timeline-node">
                     <div class="node-icon"><i class="fas fa-mobile-alt"></i></div>
                     <div class="node-content">
@@ -542,14 +558,6 @@
                     </div>
                 </div>
 
-                <!-- Nodo adicional sugerido (opcional) -->
-                <div class="timeline-node">
-                    <div class="node-icon"><i class="fas fa-cloud"></i></div>
-                    <div class="node-content">
-                        <h4>2010 - Cloud Computing</h4>
-                        <p>Amazon Web Services populariza la computación en la nube, permitiendo escalabilidad global.</p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -558,7 +566,27 @@
             <p>El primer mensaje enviado a través de ARPANET fue "LO" - una transmisión fallida de la palabra "LOGIN" que se cortó cuando el sistema se colapsó.</p>
         </div>
     </div>
+    
+    <div class="topic-content">
+        
+        <div class="references">
+            <h4>Fuentes verificadas:</h4>
+            <ul>
+                <li>Internet Society. (2023) <a href="https://www.internetsociety.org/internet/history-internet/brief-history/" target="_blank" rel="noopener noreferrer"> <em> "History of the Internet"</em> </a>
+                    <li>Contiene la cronología oficial desde ARPANET hasta la actualidad.</li>
+                    
+                    <li> CERN.<a href="https://home.cern/science/computing/birth-web" target="_blank" rel="noopener noreferrer"> <em>"The Birth of the Web"</em> </a></li>
+                    <li> Documentación oficial sobre Tim Berners-Lee y la WWW.</li>
+                    
+                    <p><li> Zakon, R. <a href="https://www.zakon.org/robert/internet/timeline/" target="_blank" rel="noopener noreferrer"> <em> "Hobbes' Internet Timeline"</em> </a> </li></p>
+                    <li> Línea de tiempo detallada con eventos clave.</li>
+                    
+                    </li>
+            </ul>
+        </div>
+    </div>
 </div>
+
 
             <!-- Estructura del Internet -->
             <div id="estructura" class="topic-card">
@@ -590,12 +618,34 @@
                                 <h4>HTTP/3</h4>
                                 <p>La última versión basada en QUIC, que reduce la latencia usando UDP en lugar de TCP.</p>
                             </div>
+                            <div class="topic-content">
+                                
+                                
+                                <div class="references">
+                                    <h4>Fuentes verificadas:</h4>
+                                    
+                                    <ul>
+                                        <li> Stuff Works. <a href="computer.howstuffworks" target="_blank" rel="noopener noreferrer"> <em> "How Internet Infrastructure Works"</em>  </li> </a>
+
+                                        <p> Explicación técnica accesible.</p>
+
+                                        <li> RFC 1122. (Estándar TCP/IP).<a href="How Internet Infrastructure Works" target="_blank" rel="noopener noreferrer"> <em> "Requirements for Internet Hosts"</em> </li> </a>
+                                        <p> Documento técnico fundamental. </p>
+
+                                        <li> ICANN. <a href="https://neubox.com/blog/funcionamiento-dns/" target="_blank" rel="noopener noreferrer"> <em>"Como funciona el DNS?"</em> </li> </a>
+                                    <p> Guía oficial del sistema de nombres de dominio</p>
+                                    
+                                    </ul>
+                                
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Dentro de la sección "Servicios y Aplicaciones" (reemplaza el contenido existente) -->
+            <!--sección "Servicios y Aplicaciones"-->
 <div id="servicios" class="topic-card">
     <h2><span><i class="fas fa-globe-americas"></i> Servicios y Aplicaciones</span> <i class="fas fa-chevron-down"></i></h2>
     <div class="topic-content">
@@ -659,12 +709,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="topic-content">
+            <div class="references">
+                <h4>Fuentes verificadas:</h4>
+                <ul>
+
+
+                    <li> Statista. <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/" target="_blank" rel="noopener noreferrer"> <em> "Servicios Online más populares" </em> </a> </li>
+                    <p> Estadísticas actualizadas de redes sociales y streaming.</p>
+                    
+                    <li> Pew Research Center. <a href="https://www.pewresearch.org/internet/fact-sheet/mobile/" target="_blank" rel="noopener noreferrer"> <em> "Hojas Informátivas Móviles" </em> </a> </li>
+                    <p> Impacto de los móviles en el uso de Internet. </p>
+                    
+                    <li> Gartner. <a href="https://www.gartner.com/en/newsroom" target="_blank" rel="noopener noreferrer"> <em> "Cloud Computing Market Trends" </em> </a> </li>
+                    <p> Informes anuales sobre servicios en la nube.</p>
+                
+                
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 
 
-<!-- Dentro de la sección "Seguridad en Internet" -->
+<!-- Sección "Seguridad en Internet" -->
 <div id="seguridad" class="topic-card">
     <h2><span><i class="fas fa-shield-alt"></i> Seguridad Digital</span> <i class="fas fa-chevron-down"></i></h2>
     <div class="topic-content">
@@ -734,9 +804,27 @@
             <p>La próxima generación de seguridad usará principios cuánticos para crear códigos irrompibles.</p>
         </div>
     </div>
+    <div class="topic-content">
+
+        <div class="references">
+            <h4>Fuentes verificadas:</h4>
+            <ul>
+                
+                <li> OWASP. <a href=" https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer"> <em> "Top 10 riesgos de seguridad" </em> </a> </li>
+                <p> Principales amenazas web (actualizado anualmente) </p>
+                
+                <li> NIST. <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer"> <em> "Marcos de Ciberseguridad" </em> </a> </li>
+                <p> Estándares de seguridad del gobierno de EE.UU.</p>
+                
+                <li> Kaspersky Lab. <a href="https://www.checkpoint.com/es/cyber-hub/threat-prevention/ransomware/" target="_blank" rel="noopener noreferrer"> <em> "Ataques de Ransomware" </em> </a> </li>
+                <p> Análisis en ciberataques </p>
+                
+            </ul>
+        </div>
+    </div>
 </div>
 
-<!-- Dentro de la sección "Tecnologías Emergentes" -->
+<!-- Sección "Tecnologías Emergentes" -->
 <div id="tecnologias" class="topic-card">
     <h2><span><i class="fas fa-robot"></i> Tecnologías Emergentes</span> <i class="fas fa-chevron-down"></i></h2>
     <div class="topic-content">
@@ -805,7 +893,49 @@
             <p>Se estima que para 2030, el 30% del tiempo laboral se realizará en entornos de realidad virtual.</p>
         </div>
     </div>
+    <div class="topic-content">
+        <div class="references">
+            <h4>Fuentes verificadas:</h4>
+            <ul>
+                
+                
+                
+                <li> MIT Technology Review. <a href="https://www.technologyreview.com/" target="_blank" rel="noopener noreferrer"> <em> "IA y computación cuántica" </em> </a> </li>
+                <p> Artículos revisados por expertos</p>
+                
+                <li> IEEE Spectrum. <a href="https://spectrum.ieee.org/web-30" target="_blank" rel="noopener noreferrer"> <em> "El futuro de la web 3.0" </em> </a> </li>
+                <p> Análisis técnico sobre descentralización </p>
+                
+                <li>  Meta Research. <a href="https://www.meta.com/metaverse/" target="_blank" rel="noopener noreferrer"> <em> "El papel del Metaverso" </em> </a> </li> 
+                <p> Documentación oficial sobre realidad extendida </p>
+                
+                
+                
+            </ul>
+        
+        </div>    
+        
+    </div>
+
 </div>
+<section id="comentarios" class="topic-card">
+    <h2><span><i class="fas fa-comments"></i> Zona de Comentarios</span> <i class="fas fa-chevron-down"></i></h2>
+    <div class="topic-content">
+        <!-- Formulario -->
+        <form id="comment-form" class="cyber-form">
+            <input type="text" id="comment-author" placeholder="Alias (opcional)" aria-label="Tu alias">
+            <textarea id="comment-text" placeholder="Escribe tu comentario..." aria-label="Contenido del comentario" required></textarea>
+            <button type="submit" class="neon-button">
+                <i class="fas fa-paper-plane"></i> Publicar
+            </button>
+        </form>
+        
+        <!-- Lista de Comentarios -->
+        <div id="comments-list" class="comments-grid">
+            <!-- Comentarios se cargarán aquí dinámicamente -->
+        </div>
+    </div>
+</section>
 
     <footer>
         <div class="container">
@@ -892,5 +1022,66 @@
         });
 </script>
     </script>
+    <!-- Añade estos scripts -->
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+
+<script>
+    // Configura Firebase (reemplaza con tus datos)
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCOGiT_W-w3Y4SGw9OSqWBsTNlG0Rw-qGA",
+  authDomain: "mi-proyecto-de-tics-2cc1d.firebaseapp.com",
+  projectId: "mi-proyecto-de-tics-2cc1d",
+  storageBucket: "mi-proyecto-de-tics-2cc1d.firebasestorage.app",
+  messagingSenderId: "677545449788",
+  appId: "1:677545449788:web:5163976eeeb93841452639",
+  measurementId: "G-M4Y8G6H9YK"
+
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Referencia a la base de datos
+    const db = firebase.database();
+    const commentsRef = db.ref('comments');
+
+    // Autenticación anónima
+    firebase.auth().signInAnonymously();
+
+    // Enviar comentario
+    document.getElementById('comment-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const author = document.getElementById('comment-author').value || "Anónimo";
+        const text = document.getElementById('comment-text').value;
+        const timestamp = new Date().toLocaleString();
+
+        if (text.trim() === "") return;
+
+        // Guardar en Firebase
+        commentsRef.push({
+            author,
+            text,
+            timestamp
+        });
+
+        // Limpiar formulario
+        document.getElementById('comment-text').value = "";
+    });
+
+    // Mostrar comentarios existentes y nuevos
+    commentsRef.on('child_added', (snapshot) => {
+        const comment = snapshot.val();
+        const commentHtml = `
+            <div class="comment-card">
+                <h4><i class="fas fa-user-astronaut"></i> ${comment.author}</h4>
+                <p>${comment.text}</p>
+                <small><i class="far fa-clock"></i> ${comment.timestamp}</small>
+            </div>
+        `;
+        document.getElementById('comments-list').insertAdjacentHTML('afterbegin', commentHtml);
+    });
+</script>
 </body>
 </html>
