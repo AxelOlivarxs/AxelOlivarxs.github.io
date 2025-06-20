@@ -218,3 +218,77 @@ footer {
         gap: 30px;
     }
 }
+/* Accesibilidad */
+.accessibility-bar {
+    background: var(--bg-dark);
+    padding: 10px;
+    text-align: right;
+}
+.accessibility-bar button {
+    background: var(--neon-blue);
+    border: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Texto oculto para screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Estilos para comentarios */
+.cyber-form {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cyber-form input, 
+.cyber-form textarea {
+    background: rgba(20, 20, 30, 0.8);
+    border: 1px solid var(--neon-blue);
+    color: var(--text-light);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.neon-button {
+    background: var(--neon-purple);
+    color: var(--bg-dark);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 6px;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 15px var(--neon-pink);
+}
+
+.comments-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.comment-card {
+    background: var(--card-bg);
+    border-left: 3px solid var(--neon-blue);
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
